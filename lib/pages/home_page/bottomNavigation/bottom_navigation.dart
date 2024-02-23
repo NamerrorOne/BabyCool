@@ -9,7 +9,7 @@ class BottomNavigation extends StatelessWidget {
     return BottomAppBar(
       height: 66,
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(35, 0, 35, 0),
+        padding: const EdgeInsets.fromLTRB(26, 0, 26, 0),
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           BottomNavigationIcon(
