@@ -9,12 +9,12 @@ class SpecialistsArea extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      margin: EdgeInsets.fromLTRB(27, 40, 27, 0),
+      margin: const EdgeInsets.fromLTRB(27, 40, 27, 0),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
+            const Text(
               'Наши специалисты',
               style: TextStyle(
                   letterSpacing: -0.5,
@@ -23,13 +23,13 @@ class SpecialistsArea extends StatelessWidget {
             ),
             IconButton(
                 onPressed: () => {},
-                icon: Icon(
+                icon: const Icon(
                     color: Color(0xFFC5C5C7),
                     size: 18,
                     Icons.arrow_forward_ios))
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         Row(
@@ -56,17 +56,17 @@ class SpecialistsArea extends StatelessWidget {
         GestureDetector(
           onTap: () => {print('Test tap')},
           child: Container(
-            margin: EdgeInsets.fromLTRB(0, 30, 0, 0),
+            margin: const EdgeInsets.fromLTRB(0, 30, 0, 0),
             width: double.infinity,
-            padding: EdgeInsets.fromLTRB(15, 15, 15, 15),
+            padding: const EdgeInsets.fromLTRB(15, 15, 15, 15),
             height: 66,
             decoration: BoxDecoration(
-                color: Color(0xFFF5F5F5),
+                color: const Color(0xFFF5F5F5),
                 borderRadius: BorderRadius.circular(15)),
             child: Stack(
               alignment: Alignment.center,
               children: [
-                Positioned(
+                const Positioned(
                   left: 0,
                   child: Text('О нас',
                       style: TextStyle(
@@ -86,16 +86,16 @@ class SpecialistsArea extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 50,
         ),
-        Text('Поделиться',
+        const Text('Поделиться',
             style: TextStyle(
                 letterSpacing: -0.5,
                 fontSize: 20,
                 color: Colors.black,
                 fontWeight: FontWeight.w700)),
-        SizedBox(
+        const SizedBox(
           height: 30,
         ),
         GestureDetector(
@@ -109,14 +109,14 @@ class SpecialistsArea extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   color: const Color(0xFF64D0FC)),
-              child: Text('Рассказать друзьям',
+              child: const Text('Рассказать друзьям',
                   style: TextStyle(
                       color: Color(0xFF000000),
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
                       letterSpacing: -0.5))),
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
         GestureDetector(
@@ -130,14 +130,14 @@ class SpecialistsArea extends StatelessWidget {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   color: const Color(0xFFC0CBD9)),
-              child: Text('Поделиться в соцсетях',
+              child: const Text('Поделиться в соцсетях',
                   style: TextStyle(
                       color: Color(0xFF000000),
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
                       letterSpacing: -0.5))),
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
         Container(
@@ -151,7 +151,7 @@ class SpecialistsArea extends StatelessWidget {
               onTap: () {
                 print('Написать в тех поддержку');
               },
-              child: Text('Написать в тех. поддержку',
+              child: const Text('Написать в тех. поддержку',
                   style: TextStyle(
                       color: Color(0xFF000000),
                       fontSize: 18,

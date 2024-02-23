@@ -7,8 +7,9 @@ class LanguagesLessons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.fromLTRB(25, 50, 25, 0),
-      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      margin: const EdgeInsets.fromLTRB(20, 50, 20, 0),
+      child:
+          const Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Text(
           'Изучение языков',
           style: TextStyle(

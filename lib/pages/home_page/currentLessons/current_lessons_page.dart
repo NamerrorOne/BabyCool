@@ -12,27 +12,27 @@ class CurrentLessons extends StatelessWidget {
             margin: EdgeInsets.fromLTRB(0, 0, 0, 20),
             height: 300,
             width: MediaQuery.of(context).size.width,
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(25, 0, 25, 0),
+            child: const Padding(
+              padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('Открытые занятия',
+                  Text('Открытые занятия',
                       style: TextStyle(
                           color: Colors.black87,
                           fontSize: 23,
                           fontWeight: FontWeight.w700,
                           letterSpacing: -1)),
-                  const SizedBox(
+                  SizedBox(
                     height: 10,
                   ),
                   CurrentlessonCard(
-                    cardTexts: const {
+                    cardTexts: {
                       'title': 'Развивающие занятия 2+',
                       "description1": 'Пройдено: 3',
                       'description2': 'Осталось: 26'
                     },
-                    progressbarColor: const Color(0xFF38B5E8),
+                    progressbarColor: Color(0xFF38B5E8),
                     progressbarProgress: 0.09,
                     progressbarSize: 60,
                     progressbarBackgroundColor:

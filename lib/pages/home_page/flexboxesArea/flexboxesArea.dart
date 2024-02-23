@@ -7,7 +7,7 @@ class FlexboxesArea extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(25, 0, 25, 0),
+      padding: const EdgeInsets.fromLTRB(15, 0, 15, 0),
       child: SizedBox(
         width: double.infinity,
         child: Column(children: [
@@ -23,7 +23,7 @@ class FlexboxesArea extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Column(
+                    const Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -39,8 +39,7 @@ class FlexboxesArea extends StatelessWidget {
                                 fontWeight: FontWeight.w600))
                       ],
                     ),
-                    Container(
-                        child: Stack(
+                    Stack(
                       children: [
                         Positioned(
                           top: 0,
@@ -57,7 +56,7 @@ class FlexboxesArea extends StatelessWidget {
                           ),
                         )
                       ],
-                    ))
+                    )
                   ]),
             ),
           ),
@@ -69,12 +68,12 @@ class FlexboxesArea extends StatelessWidget {
                   Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(15),
                         width: 157,
                         height: 182,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            color: Color(0xFFFCBDAD)),
+                            color: const Color(0xFFFCBDAD)),
                         child: Stack(children: [
                           const Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -117,7 +116,7 @@ class FlexboxesArea extends StatelessWidget {
                             color: const Color(0xFFDAC0E3)),
                         child: Stack(
                           children: [
-                            Text('Логоритмика',
+                            const Text('Логоритмика',
                                 style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w700,
@@ -132,21 +131,21 @@ class FlexboxesArea extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 25,
                   ),
                   Column(
                     children: [
                       Container(
-                        padding: EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(15),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            color: Color(0xFFBDEFC3)),
+                            color: const Color(0xFFBDEFC3)),
                         height: 280,
                         width: 157,
                         child: Stack(
                           children: [
-                            Column(
+                            const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text('Нейроигры',
@@ -173,19 +172,19 @@ class FlexboxesArea extends StatelessWidget {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
                       Container(
-                        padding: EdgeInsets.all(15),
+                        padding: const EdgeInsets.all(15),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15),
-                            color: Color(0xFFC9D7FD)),
+                            color: const Color(0xFFC9D7FD)),
                         height: 182,
                         width: 157,
                         child: Stack(
                           children: [
-                            Column(
+                            const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text('Сказки на ночь',

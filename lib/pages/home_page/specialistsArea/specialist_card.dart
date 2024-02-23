@@ -25,31 +25,33 @@ class _SpecialistCardState extends State<SpecialistCard> {
   @override
   void initState() {
     validateSurname(widget.surname);
+    setState(() {});
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
+      padding: const EdgeInsets.fromLTRB(0, 5, 0, 5),
       width: 70,
       height: 110,
       decoration: BoxDecoration(
-          color: Color(0xFFF5F5F5), borderRadius: BorderRadius.circular(24)),
+          color: const Color(0xFFF5F5F5),
+          borderRadius: BorderRadius.circular(24)),
       child: Column(children: [
         ClipRRect(
             borderRadius: BorderRadius.circular(22),
             child: Image.asset(widget.path, height: 50)),
-        SizedBox(
+        const SizedBox(
           height: 5,
         ),
         Text(
           widget.name,
-          style: TextStyle(fontSize: 10),
+          style: const TextStyle(fontSize: 10),
         ),
         Text(
           widget.surname,
-          style: TextStyle(fontSize: 10),
+          style: const TextStyle(fontSize: 10),
         ),
       ]),
     );
